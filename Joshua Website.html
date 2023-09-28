@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            position: fixed;
+            height: 100%;
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #4ab17d;
+            background-color: #4ab17d;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+        .content {
+            margin-left: 220px; /* Adjust this value to match the sidebar width */
+            padding: 20px;
+        }
+
+        header {
+            background-color: #4ab17d;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            display: none; /* Hide the text title */
+        }
+
+        .logo {
+            max-width: 150px; /* Adjust the width as needed */
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #706464;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .article {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+
+        .article h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .article p {
+            font-size: 16px;
+        }
+
+        /* News Ticker */
+        .news-ticker {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: ticker 10s linear infinite;
+        }
+
+        @keyframes ticker {
+            0% {
+                transform: translateX(100%);
+            }
+            90% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(-100%);
+                opacity: 0; /* Fade out the ticker */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Menu</h1>
+        <a href="politics.html">Politics</a>
+        <a href="sport.html">Sport</a>
+        <a href="world-news.html">World News</a>
+        <a href="climate-change.html">Climate Change</a>
+    </div>
+
+    <div class="content">
+        <header>
+            <img class="logo" src="file:///Users/joshuarichardson/Downloads/Screenshot_2023-09-28_at_12.49.07-removebg-preview.png" alt="Basic News Logo">
+        </header>
+
+        <div class="container">
+            <div class="article">
+                <h2>Breaking News</h2>
+                <h3><a href="headline1.html">Headline 1</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et urna eu nunc condimentum tincidunt.</p>
+            </div>
+
+            <div class="article">
+                <h3><a href="headline2.html">Headline 2</a></h3>
+                <p>Phasellus facilisis ex eu tellus dictum, auctor egestas est malesuada. Sed eu fringilla ligula.</p>
+            </div>
+
+            <div class="article">
+                <h3><a href="headline3.html">Headline 3</a></h3>
+                <p>Vestibulum non arcu non odio tempus gravida sed nec felis. Fusce nec nisi nec libero suscipit viverra.</p>
+            </div>
+
+            <div class="article">
+                <h3><a href="headline4.html">Headline 4</a></h3>
+                <p>Vestibulum non arcu non odio tempus gravida sed nec felis. Fusce nec nisi nec libero suscipit viverra.</p>
+            </div>
+
+            <!-- Additional Article -->
+            <div class="article">
+                <h3><a href="headline5.html">Headline 5</a></h3>
+                <p>Additional content goes here.</p>
+            </div>
+            <div class="news-updates">
+                <h2>Real-Time News Updates</h2>
+                <ul id="news-list"></ul>
+            </div>
+        </div>
+
+        <div class="news-ticker">
+            <p>This is a breaking news ticker.</p>
+        </div>
+    </div>
+</body>
+</html>
+    
+
+
+
+
+
+
+                
+
+
+
+
+
+
